@@ -1,0 +1,44 @@
+version: '3.9'
+
+services:
+  node_app:
+    container_name: backend
+    build: ./BackEnd
+    image: ima_backend
+    command: npm start  # Ruta del archivo JavaScript compilado
+    ports:
+      - "4000:4000"
+    environment:
+      - PG_DB=postgres
+      - PG_USER=postgres
+      - PG_PASSWORD=12345
+      - PG_HOST=node_db
+    depends_on:
+      - node_db
+    restart: always
+
+  node_db:
+    container_name: node_db
+    image: postgres:12
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+    volumes:
+      - node_db_data:/var/lib/postgresql/data
+
+  front_app:
+    container_name: front_app
+    build: ./FrontEnd
+    image: ima_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - node_db    
+
+  
+volumes:
+  node_db_data: {}
+    

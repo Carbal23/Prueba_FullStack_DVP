@@ -1,0 +1,17 @@
+body{
+    background-color: #f0f2f5;
+    overflow-x: hidden;
+}
+
+.app{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bigContainer {
+    min-height: 70vh;
+    width: 85%;
+    margin: 0 auto 100px auto;
+  }

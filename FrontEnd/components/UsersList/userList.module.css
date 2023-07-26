@@ -1,0 +1,10 @@
+.usersList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+  gap: 20px;
+  width: 60%;
+  margin: 30px auto 60px auto;
+  min-height: 100%;
+}
+
+

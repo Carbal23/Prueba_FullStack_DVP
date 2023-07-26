@@ -1,0 +1,43 @@
+.cardContainer {
+  box-shadow: 1px 5px 10px #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 400px;
+  background-color: #ffffff;
+}
+
+.imgcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgcontainer img{
+    border-radius: 50%;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.infoContainer {
+  margin-left: 20px;
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+.chart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barChart{
+  height: 100px;
+  width: 100px;
+}

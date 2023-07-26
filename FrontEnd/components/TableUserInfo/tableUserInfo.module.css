@@ -1,0 +1,39 @@
+.gridData {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1fr, 4);
+  border: 0.5px solid #ededed;
+  background-color: #fff;
+}
+
+.data {
+  grid-column: 1/3;
+  border: 0.5px solid #ededed;
+  background-color: orange;
+}
+
+.data h4{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.title2 {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.gridField {
+  border: 0.5px solid #ededed;
+}
+
+.fieldData {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.resultData {
+  margin-left: 15px;
+  font-size: 16px;
+}

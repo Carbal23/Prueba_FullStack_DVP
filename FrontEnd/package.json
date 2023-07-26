@@ -1,0 +1,32 @@
+{
+  "name": "pruebatecnica-doublevpatner-nextjs",
+  "version": "0.1.0",
+  "description": "Prueba tecnica para puesto full stack dvp en Double V Patner",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next build && next start",
+    "begin": "next start",
+    "export": "next export"
+  },
+  "keywords": [],
+  "author": "Mauricio Carbal Martinez <mcarbal23@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react-transition-group": "^4.4.6",
+    "axios": "^1.4.0",
+    "chart.js": "^4.3.0",
+    "next": "^13.4.12",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-transition-group": "^4.4.5",
+    "sweetalert2": "^11.7.20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.3",
+    "@types/react": "^18.2.15",
+    "typescript": "^5.1.6"
+  }
+}

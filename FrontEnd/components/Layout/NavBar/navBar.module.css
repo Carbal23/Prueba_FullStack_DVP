@@ -1,0 +1,15 @@
+.nav{
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.nav i{
+    font-size: 25px;
+    cursor: pointer;
+}
